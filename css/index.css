@@ -1,0 +1,611 @@
+body {
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .15vw;
+    font-weight: 800;
+    position: relative; /* Make body a positioning context */
+}
+.header {
+    text-align: center;
+    background-color: #455d7a; /* Slightly lighter green */
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+
+.header img {
+    padding-top: 3vh;
+    padding-left: 1.5vw;
+}
+.header .nav {
+    padding-top: 2.5vh;
+}
+.header .contact-number {
+    padding-top: 3.5vh;
+}
+
+/* Apply to specific elements if needed */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300; /* Adjust font weight for headings */
+}
+
+p, span, a, button {
+    font-weight: 300; /* Adjust font weight for paragraphs, spans, links, and buttons */
+}
+.logo {
+    float: left;
+    text-align: left;
+    margin-left: -.5vw;
+    margin-top: -.75vh;
+}
+.nav {
+    display: inline-block;
+    margin-left: -4vh;
+}
+
+.nav button {
+    background-color: #455d7a; /* Slightly lighter green */
+    border: none;
+    color: white;
+    padding: .5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3vw; /* Larger font size */
+    font-weight: bold; /* Bolder font weight */
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+
+}
+.nav button:hover {
+    font-size: 1.4vw; /* Larger font size on hover */
+}
+.banner {
+    width: 100%;
+    height: 90vh;
+    
+    position: relative;
+    display: flex;
+    background-image: url('../images/businessimage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    z-index: -1;
+    
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.4); /* Green tint */
+}
+.slide h2 {
+    font-weight:bolder;
+    font-size: 2.8vw;
+    
+}
+.slide p {
+    font-size: 1.3vw;
+    
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+}
+.form-container {
+    width: 45%;
+    
+    
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; 
+    
+    position: relative; /* Add this */
+  }
+
+
+.banner-text {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -4vh;
+}
+
+.form-container {
+    background-color: white;
+    margin-top: 12vh;
+    margin-bottom: 20vh;
+    margin-right: 5vw;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(128, 128, 128, 0.6); 
+}
+
+.form-container h2 {
+    margin: 0;
+    font-size: 2.8vw;
+    color: white; /* Adjusted title color */
+    font-stretch:semi-expanded;
+}
+.form-container p {
+    font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+}
+.box {
+    width: 25%;
+    background-color: whitesmoke; /* Changed to white */
+    padding: 3.5vw;
+    text-align: center;
+    border-radius: 0px;
+    margin: 2vw;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow */
+}
+.box:hover {
+    
+    background-color: lightgray;
+}
+.box h3 {
+    margin-top: 0;
+    color: #233142; /* Changed to black */
+    font-weight: bold;
+}
+
+.box a {
+    background-color: #455d7a; /* Changed to green */
+    border: none;
+    color: white;
+    padding: .7vw 1.2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: .5vh;
+    font-weight: bold;
+}
+.box button:hover {
+    background-color: #233142;
+}
+.box a:hover {
+    background-color: #233142;
+}
+
+.contact-number {
+    position: absolute;
+    padding-top: 1vh;
+    right: 2vw;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold; /* Bolder font weight */
+    align-items: center;            
+    cursor: pointer;
+}
+.box img {
+    width: 50px; /* Adjust width of the image */
+    height: 50px; /* Adjust height of the image */
+    margin-bottom: 10px; /* Adjust spacing between image and text */
+}
+.footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #455d7a; /* Your footer background color */
+    color: white; /* Text color */
+    padding: .75vw 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p {
+    margin: 0;
+}
+
+.left-content,
+.right-content {
+    flex: 1;
+
+}
+.right-content {
+    text-align: right;
+    margin-right: 1vw;
+}
+.left-content {
+    text-align: left;
+    margin-left: 1vw;
+}
+.center-content {
+    flex: 2;
+    text-align: center;
+    
+}
+.right-content {
+    top: 0;
+    right: 1.3vw;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold; /* Bolder font weight */
+    
+}
+.header1 {
+    background-color: white;
+    color: #233142;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: -4vh;
+    margin-bottom: 1.5vh;
+    font-size: 1.5vw;
+}
+
+
+
+.header1 p {
+    font-size: 1.3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+    .list {
+        color: white;
+        font-weight: bold;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        background-color: whitesmoke; 
+        text-align: center;
+        padding-bottom: 3vh;
+        padding-top: 1vh;
+    }
+    .slideshow-container h2 {
+        color:  #233142;
+        font-weight: bold;
+        font-size: 2vw; 
+    }
+    .slideshow-container p {
+        color: #233142;
+        padding-bottom: 1.3vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        font-size: 20px;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+
+  
+   
+
+    .dots {
+        text-align: center;
+        margin-top: 1.5vh;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    
+    .contact-info {
+        position: absolute;
+        top: 25%; /* Adjust as needed to position the popup directly over the contact number */
+        left: 80%;
+        transform: translateX(-90%);
+        background-color: #233142;
+        padding: 10px;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        display: none;
+        z-index: 2; /* Ensure contact info appears above other content */
+        }
+
+    .contact-number:hover  .contact-info {
+        display: block;
+    }
+    .banner-button {
+        background: rgba(0,0, 0, 0.0);
+        color: #233142; /* White text color */
+        text-align: center; /* Center align text */
+        height: 15vh;
+        margin-top: -15vh;
+        z-index: 1;
+        
+        
+    }
+    .banner-button h2 {
+        font-size: 2.5vw;
+        color: whitesmoke;
+        font-weight: bold;
+        padding-top: 2vh;
+        margin-bottom: 1vh;
+        margin-top: 0px;
+        }
+    
+    .banner-button a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .banner-button .button {
+        background-color: #455d7a; /* White button background color */
+        color: #233142; /* Blue button text color */
+        padding: 1vw 2vw; /* Add padding to the button */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        font-size: 1.75vw; /* Set button font size */
+        border-radius: 3px; /* Add some border radius */
+        font-weight: bold;
+        width: 30%;
+        margin-top: 4.5vh;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+    }
+        
+
+    .banner-button .button:hover {
+        background-color: lightgray;
+      }
+    .logoright {
+        display: none;
+    }
+    #hide {
+        display: none;
+    }
+    @media screen and (max-width: 600px) {
+        .box a {
+            background-color: #455d7a; /* Changed to green */
+            border: none;
+            color: white;
+            padding: 2vw 4vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 2vw;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: .5vh;
+            font-weight: bold;
+        }
+        .logo {
+            float: 1;
+            text-align: left;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .slideshow-container h2 {
+            font-size: 7vw;
+        }
+        .slideshow-container p {
+            font-size: 3.5vw;
+        }
+        .header1 h1 {
+            font-size: 7vw;
+        }
+        .header1 p {
+            font-size: 3.5vw;
+        }
+        .logoright {
+            display:block;
+            float: 2;
+            text-align: right;
+            margin-left: 0;
+            margin-top: -2vh;
+        }
+        #hide {
+            display: block;
+        }
+
+        .header img {
+            height: 57px;
+            width: 57px;
+            padding-right: 1vw;
+        }
+        .header .nav {
+            padding-top: 0;
+        }
+        .header .contact-number {
+            padding: 5px 35px;
+            padding-bottom: 20px;
+        }
+        .nav {
+            display: none;
+        }
+        
+
+        .visible {
+            display: block;
+            text-align: center;
+            margin-left: 0;
+        }
+        .header {
+            text-align: center;
+            background-color: #455d7a; /* Slightly lighter green */
+            align-items: center;
+            height: auto;
+        }
+        .banner {
+            width: 100%;
+            height: 70vh;
+            padding-bottom: 10vh;
+        }
+        .nav button {
+            background-color: #455d7a; /* Slightly lighter green */
+            border: none;
+            color: white;
+            padding: 5px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 4vw; /* Larger font size */
+            font-weight: bold; /* Bolder font weight */
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: font-size 0.3s ease;
+
+        }
+        .nav button:hover {
+            font-size: 5vw;
+        }
+        .nav a {
+            color: #455d7a;
+        }
+        .nav button {
+            display: block;
+            margin: 0 auto;
+        }
+        .footer {
+            display: block;
+            text-align: center;
+        }
+        .right-content,
+        .left-content,
+        .center-content {
+            text-align: center;
+        }
+        .right-content {
+            margin-right: 0;
+        }
+        .left-content {
+            margin-left: 0;
+        }
+        
+        .contact-info {
+            position: static;
+            display: block;
+            font-size: 4vw;
+
+        }
+        .contact-info {
+            display: block;
+            float: 1;
+            text-align: center;
+            
+            background-color: #455d7a;
+            box-shadow: none;
+        }
+        .contact-number {
+
+            display: none;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20vh;
+        }
+        .box {
+            width: 80%; /* Adjusted width for two boxes per row */
+            background-color: whitesmoke;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px;
+            position: relative;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer; /* Added cursor pointer */
+            font-size: 3vw;
+        }
+        .banner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        .form-container {
+            width: 90%;
+            
+            margin-left: 5%;
+            text-align: center;
+            
+            z-index: 1;
+        }
+        .banner-button {
+            background: rgba(0,0, 0, 0.0);
+            color: #233142; /* White text color */
+            text-align: center; /* Center align text */
+            height: 15vh;
+            margin-top: -28vh;
+            z-index: 1;
+            
+            
+        }
+        .banner-button h2 {
+            font-size: 3.5vw;
+            color: whitesmoke;
+            font-weight: bold;
+            padding-top: 2vh;
+            
+            }
+        
+        .banner-button a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .banner-button .button {
+            background-color: #455d7a; /* White button background color */
+            color: #233142; /* Blue button text color */
+            padding: 2vw 4vw; /* Add padding to the button */
+            border: none; /* Remove button border */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            font-size: 3.5vw; /* Set button font size */
+            border-radius: 3px; /* Add some border radius */
+            font-weight: bold;
+            width: 30%;
+            margin-top: 4.5vh;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+        }
+        .banner-text {
+            display: none;
+        }
+        .form-container h2 {
+            padding-top: 4vh;
+            font-size: 7vw;
+            color: white; /* Adjusted title color */
+            font-stretch:semi-expanded;
+        }
+        .form-container p {
+            font-size: 3.5vw;
+        }
+        .form-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        
+    }

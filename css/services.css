@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    text-decoration: none;
+            
+            
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: .1vw;
+            font-weight: 800;
+    position: relative; /* Make body a positioning context */
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #455d7a; /* Slightly lighter green */
+    align-items: center;
+}
+body {
+    font-weight: 300; /* Adjust font weight to make it thinner */
+}
+
+/* Apply to specific elements if needed */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #233142; /* Adjust font weight for headings */
+}
+
+p, span, a, button {
+    font-weight: 300; /* Adjust font weight for paragraphs, spans, links, and buttons */
+}
+.logo {
+    float: left;
+    text-align: left;
+    margin-left: -.5vw;
+    margin-top: -.75vh;
+}
+.nav {
+    display: inline-block;
+    margin-left: -4vh;
+}
+
+.nav button {
+    background-color: #455d7a; /* Slightly lighter green */
+    border: none;
+    color: white;
+    padding: .5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3vw; /* Larger font size */
+    font-weight: bold; /* Bolder font weight */
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+
+}
+.nav button:hover {
+    font-size: 1.4vw; /* Larger font size on hover */
+}
+.footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #455d7a; /* Your footer background color */
+    color: white; /* Text color */
+    padding: .75vw 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p {
+    margin: 0;
+}
+
+.left-content,
+.right-content {
+    flex: 1;
+
+}
+.right-content {
+    text-align: right;
+    margin-right: 1vw;
+}
+.left-content {
+    text-align: left;
+    margin-left: 1vw;
+}
+.center-content {
+    flex: 2;
+    text-align: center;
+    
+}
+.right-content {
+    top: 0;
+    right: 1.3vw;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold; /* Bolder font weight */
+    
+}
+.header1 {
+    background-color: white;
+    color: #233142;
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    font-size: 25px;
+}
+
+.header1 h1 {
+    margin: 0;
+}
+.header1 p {
+    font-size: 20px;
+}
+.contact-number {
+    position: absolute;
+    padding-top: 1vh;
+    right: 2vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; /* Bolder font weight */
+    align-items: center;            
+    
+}
+.banner {
+    background-color: whitesmoke; /* Grey color */
+    padding: 20px 0;
+    text-align: center;
+    
+}
+.banner h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #233142;
+}
+.banner p {
+    margin: 20px;
+    font-size: 18px;
+    color: #233142;
+}
+.banner .underline {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+.banner-heading {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    display: inline-block;
+    font-weight: bold ;
+}
+
+.banner-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust this value to control the distance of the underline from text */
+    left: 50%; /* Position the underline at the center of the text */
+    width: 50%; /* Set the width of the underline to half the width of the text */
+    height: 3px;
+    background-color: black; /* Adjust the color of the underline */
+    transform: translateX(-50%); /* Center the underline */
+}
+.contact-info {
+        position: absolute;
+        top: 25%; /* Adjust as needed to position the popup directly over the contact number */
+        left: 80%;
+        transform: translateX(-90%);
+        background-color: #233142;
+        padding: 10px;
+        color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        display: none;
+        z-index: 2; /* Ensure contact info appears above other content */
+        }
+
+.contact-number:hover  .contact-info {
+        display: block;
+    }
+
+.box {
+    width: 80%; /* Adjusted width for two boxes per row */
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer; /* Added cursor pointer */
+    font-size: 20px;
+    color: #233142;
+    
+}
+
+.box:hover {
+    background-color: lightgray;
+}
+.box h3 {
+    margin-top: 0;
+    color: #233142; /* Changed to black */
+    font-weight: bold;
+    font-size: 30px;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust alignment */
+}
+
+.box button {
+    background-color: #455d7a; /* Changed to green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.box button:hover {
+    background-color: #233142;
+}
+.more-info {
+    display: none; /* Initially hide the detailed information */
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; /* Ensure it covers other content */
+}
+.box:hover .more-info {
+    background-color: lightgray;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+#hide {
+    display: none;
+}
+.logoright {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        float: 1;
+        text-align: center;
+        margin-left: -2vw;
+        margin-top: -2vh;
+    }
+    #hide {
+        display: block;
+    }
+    .logoright {
+        display:block;
+        float: 2;
+        text-align: right;
+        margin-left: 0;
+        margin-top: -2vh;
+    }
+
+   
+    .header img {
+        height: 57px;
+        width: 57px;
+        padding-right: 1vw;
+    }
+    .header .nav {
+        padding-top: 0;
+    }
+    .header .contact-number {
+        padding: 5px 35px;
+        padding-bottom: 20px;
+    }
+    
+      
+    .nav {
+        display: none;
+    }
+    .header {
+        text-align: center;
+        background-color: #455d7a; /* Slightly lighter green */
+        align-items: center;
+        height: auto;
+    }
+    .banner {
+        width: 100%;
+        height: 27vh;
+        
+    }
+    .nav button {
+        background-color: #455d7a; /* Slightly lighter green */
+        border: none;
+        color: white;
+        padding: 5px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 4vw; /* Larger font size */
+        font-weight: bold; /* Bolder font weight */
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: font-size 0.3s ease;
+    }
+    .nav button:hover {
+        font-size: 5vw;
+    }
+    .contact-number {
+
+        display: none;
+    }
+    .visible {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    .nav a {
+        color: #455d7a;
+    }
+    .nav button {
+        display: block;
+        margin: 0 auto;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+    }
+    .right-content,
+    .left-content,
+    .center-content {
+        text-align: center;
+    }
+    .right-content {
+        margin-right: 0;
+    }
+    .left-content {
+        margin-left: 0;
+    }
+    
+    .contact-info {
+        position: static;
+        display: none;
+        font-size: 4vw;
+
+    }
+    .contact-number {
+
+        display: none;
+    }
+    .contact-number:hover  .contact-info {
+        display: inline;
+        float: none;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: #455d7a;
+        box-shadow: none;
+    }
+}

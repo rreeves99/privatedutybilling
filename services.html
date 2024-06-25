@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.privatedutybilling.com/images/favicon.png">
+    <link rel="stylesheet" href="css/services.css">
+    <title>Private Duty Billing Solutions</title>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.nav');
+            var contactInfo = document.querySelector('.contact-number');
+            nav.classList.toggle('visible');
+            
+            }
+    </script>
+    
+    
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <!-- Replace the src attribute with the path to your logo image -->
+        <a href="index.html"><img src="images/Test3.png" alt="Logo" width="50" height="50"></a>
+    </div>
+    <div class="logoright">
+        <img src="images/hamburger.png" alt="Logo" width="50" height="50" onclick="toggleNav()">
+    </div>
+    <div class="nav">
+        <a href="index.html"><button>Home</button></a>
+        <a href="aboutus.html"><button>About Us</button></a>
+        <a href="pricing.html"><button>Pricing</button></a>
+    </div>
+    <span class="contact-number">Contact Us
+        <div class="contact-info">
+            <p>Email: info@privatedutybilling.com</p>
+            <p>Phone: 269.249.6576</p>
+        </div>
+    </span>
+</div>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/cpyc-2f6-c4x/30-minute-overview-meeting', text: 'Schedule time with us', color: '#455d7a', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+<div class="banner">
+    <h2 class="banner-heading">Services</h2>
+    <p>Below are the services we offer at a baseline. We are a firm believer in custom solutions to cases that we believe are applicable. It is of upmost important that we are customizing solutions for all clients to meet the individual needs that we know all businesses and business owners have.</p>
+</div>  
+<div class="box-container">
+    <div class="box" id="box1" onclick="showMoreInfo('box1')">
+        <h3>Cash Flow Management</h3>
+        <img src="images/logo1.png" alt="" height="200px" width="200px">
+        <p>In our experience many clients do not realize they have payors that can and will pay more quickly.  Running a Home Care agency has tight margins and your growth is dependent upon your ability to quickly and efficiently turn receivables into cash. </p>
+        
+        
+    </div>
+    <div class="box" id="box4" onclick="showMoreInfo('box4')">
+        <h3>Instant Pay</h3>
+        <img src="images/logo4.png" alt="" height="200px" width="200px">
+        <p>Instant pay is a solution to have a portion of your recievables advanced to you at the beginning of each billing period by Private Duty Billing Solutions. This service comes at a fee and requires billing history. This is something that can be essential for groiwing home care agencies who are struggling with Cash Flow Management.</p>
+        
+    </div>
+    <div class="box" id="box2" onclick="showMoreInfo('box2')">
+        <h3>Payor Integration</h3>
+        <img src="images/logo2.png" alt="" height="200px" width="200px">
+        <p>In our pursuit to streamline payor integrations, our foremost objective is efficiently enrolling them into billing systems designed for each payor type.</p>
+        <p><strong>We have had success with:</strong> <br>
+            &#x2022; VA<br>
+            &#x2022; Medicaid <br>
+            &#x2022; Long Term Care Insurance <br>
+            &#x2022; Auto Insurance <br>
+            &#x2022; Private Pay <br>
+            &#x2022; Workmans Comp <br>
+            &#x2022; DD programs and More!
+        </p>
+        
+    </div>
+    <div class="box" id="box3" onclick="showMoreInfo('box3')">
+        <h3>Financial Reporting</h3>
+        <img src="images/logo3.png" alt="" height="200px" width="200px">
+        <p>
+            Without a clear view into your cash flow you are basically sailing a ship without a compass.  Our reporting options will allow you to have improved insight into your agency's financial situation.
+            </p>
+        
+        
+    </div>
+    
+    
+    
+</div>
+
+<div class="footer">
+    <div class="left-content">
+        <!-- Logo here -->
+        <img src="images/Test3.png" alt="Logo" width="57" height="57">
+    </div>
+    <div class="center-content">
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Private Duty Biling Solutions. All rights reserved.</p>
+    </div>
+    <div class="right-content">
+        <!-- Phone number here -->
+        <span></span>
+    </div>
+    <div class="center-content" id="hide"><br>
+        <p><strong>Email: info@privatedutybilling.com</strong></p>
+            <p><strong>Phone: 269.249.6576</strong></p>
+ </div>
+</div>
+
+</body>
+</html>

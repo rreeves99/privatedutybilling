@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.privatedutybilling.com/images/favicon.png">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Private Duty Billing Solutions</title>
+    
+</head>
+<body>
+
+<div class="header">
+    <div class="home">
+      <a href="index.html"><p>X</p></a>
+    </div>
+    <div class="logo">
+        <!-- Replace the src attribute with the path to your logo image -->
+        <img src="images/Test2.png" alt="Logo" width="100" height="100">
+    </div>
+    
+</div>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/cpyc-2f6-c4x/30-minute-overview-meeting', text: 'Schedule time with us', color: '#455d7a', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+<div class="banner">
+    <h2 class="banner-heading">Services Inquiry</h2>
+    <p>Please fill out this form so that we are able to best suit your needs as a company. </p>
+</div>  
+<div class="container">
+    
+    <form action="https://formspree.io/f/xqkrwrzr" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company">
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Person:</label>
+        <input type="text" id="contact" name="contact">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="business-years">How long have you been in business?</label><br>
+        <select id="business-years" name="business-years">
+            <option value="less-than-a-month">Less than a month or not open</option>
+            <option value="less-than-a-year">Less than a year</option>
+            <option value="1-year">1 year</option>
+            <option value="2-years">2 years</option>
+            <option value="3-years">3 years</option>
+            <option value="4-years">4 years</option>
+            <option value="5-years-or-more">5+ years</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="weekly-billing">How many hours do you bill weekly? (Rough approximate)</label><br>
+        <input type="number" id="weekly-billing" name="weekly-billing">
+      </div>
+      <div class="form-group">
+        <label for="billing-method">Is billing currently being billed in house or by a third party or other?</label><br>
+        <select id="billing-method" name="billing-method">
+          <option value="in-house">In-house</option>
+          <option value="third-party">Third party</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>What payor types do you currently have?</label><br>
+        <input type="checkbox" id="va" name="payor-type" value="va">
+        <label for="va">VA</label><br>
+        <input type="checkbox" id="medicaid" name="payor-type" value="medicaid">
+        <label for="medicaid">Medicaid</label><br>
+        <input type="checkbox" id="private-pay" name="payor-type" value="private-pay">
+        <label for="private-pay">Private Pay</label><br>
+        <input type="checkbox" id="insurance" name="payor-type" value="insurance">
+        <label for="insurance">Insurance</label><br>
+        <input type="checkbox" id="other-payor" name="payor-type" value="other">
+        <label for="other-payor">Other</label><br>
+      </div>
+      <div class="form-group">
+        <label for="payor-percentages">What was the main reason for scheduling your call today?</label>
+        <input type="text" id="payor-percentages" name="payor-percentages">
+      </div>
+      
+      <div class="form-group">
+        <label for="ams">What AMS system do you currently use? (WellSky, MatrixCare, etc.)</label>
+        <input type="text" id="ams" name="ams">
+      </div>
+      <div class="form-group">
+        <label for="referral">Who referred you to Private Duty Billing Solutions?</label>
+        <input type="text" id="referral" name="referral">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+<div class="footer">
+    <div class="left-content">
+        <!-- Logo here -->
+        <img src="images/Test.png" alt="Logo" width="57" height="57">
+    </div>
+    <div class="center-content">
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Private Duty Biling Solutions. All rights reserved.</p>
+    </div>
+    <div class="right-content">
+        <!-- Phone number here -->
+        <span></span>
+    </div>
+</div>
+
+</body>
+</html>
